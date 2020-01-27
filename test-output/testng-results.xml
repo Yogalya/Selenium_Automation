@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12014" started-at="2020-01-27T06:23:22Z" finished-at="2020-01-27T06:23:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12014" started-at="2020-01-27T06:23:22Z" finished-at="2020-01-27T06:23:34Z">
+      <class name="ExecuteTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecuteTest@7f9a81e8]" name="beforeMethod" is-config="true" duration-ms="5777" started-at="2020-01-27T06:23:22Z" finished-at="2020-01-27T06:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test001(java.lang.String, java.lang.String)[pri:0, instance:ExecuteTest@7f9a81e8]" name="test001" duration-ms="6177" started-at="2020-01-27T06:23:28Z" data-provider="dt_test001" finished-at="2020-01-27T06:23:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ayogalya@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test001 -->
+      </class> <!-- ExecuteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
