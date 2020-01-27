@@ -5,9 +5,7 @@ import org.openqa.selenium.WebElement;
 public class TestBase {
 
 	
-	
-
-		
+		//Assigning web driver to do open the browser with the URL
 		public void open(WebDriver driver, String url) {
 			try {
 				driver.get(url);
@@ -17,7 +15,7 @@ public class TestBase {
 		}
 		
 		
-		
+		//Assigning web driver for clicking on the element
 		public void click(WebDriver driver, By locator) {
 			try {
 				WebElement element = driver.findElement(locator);
@@ -28,8 +26,7 @@ public class TestBase {
 		}
 		
 		
-		
-		
+		//Assigning web driver to enter the values 
 		public void type(WebDriver driver, By locator, String value) {
 			try {
 				WebElement element = driver.findElement(locator);
@@ -40,4 +37,5 @@ public class TestBase {
 				e.printStackTrace();
 			}
 		}
+		
 }
