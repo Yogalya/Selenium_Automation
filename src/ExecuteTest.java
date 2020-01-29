@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
 		@DataProvider
 		public Object[][] dt_test001() {
 			return new Object[][] { 
-				new Object[] { "ayogalya@gmail.com", "test123"},
+				new Object[] { "ayogalya@gmail.com", "test123", "London", "Paris", "April", "25", "Blue Skies Airlines", ""},
 				
 				
 			};
@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
 		
 		
 		@Test(dataProvider = "dt_test001")
-		public void test001(String userName, String Password) {
+		public void test001(String userName, String Password, String departure, String arrival, String arrivalMonth, String arrivalDate, String airline, String headerText) {
 			
 			Login pageL = new Login();
 			
@@ -49,9 +49,21 @@ import org.testng.annotations.Test;
 			pageL.enterpassword(driver, Password);
 		
 			
-			
 			pageL.clickonSubmit(driver);
-		
+			
+			pageL.departingFrom(driver, departure);
+			pageL.arrivingIN(driver, arrival);
+			
+			
+			pageL.selectToMonth(driver, arrivalMonth);
+			pageL.selectToMonth(driver, arrivalDate);
+			
+			pageL.selectAirline(driver, airline);
+			
+			pageL.ClickonContinue(driver);
+			
+			
+			pageL.verifyContainsText(driver, headerText);
 			
 			
 		}
