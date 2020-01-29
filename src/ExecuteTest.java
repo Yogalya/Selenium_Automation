@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
 		@DataProvider
 		public Object[][] dt_test001() {
 			return new Object[][] { 
-				new Object[] { "ayogalya@gmail.com", "test123", "London", "Paris", "April", "25", "Blue Skies Airlines", ""},
+				new Object[] { "ayogalya@gmail.com", "test123", "London", "Paris", "April", "25", "Blue Skies Airlines", "London to Paris"},
 				
 				
 			};

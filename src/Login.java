@@ -14,13 +14,13 @@ public class Login{
 		By df_depart= By.xpath("//select[@name='fromPort']");
 		By ai_arrival= By.xpath("//select[@name='toPort']");
 		
-		By tm_toMonth= By.xpath("//select[@name='toMonth'");
-		By td_toDate= By.xpath("//select[@name='toMonth'");
+		By tm_toMonth= By.xpath("//select[@name='toMonth']");
+		By td_toDate= By.xpath("//select[@name='toDay']");
 		
 		By al_airline= By.xpath("//select[@name='airline']");
 		
 		By btn_continue= By.xpath("//input[@name='findFlights']");
-		By lbl_Text= By.xpath("");
+		By lbl_Text= By.xpath("//b/font[text()='DEPART']/following::font[1]");
 		
 		
 		
